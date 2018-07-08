@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Landing</title>
+{% endblock%}
+
+
+{% block content %}
+<div class="container">
+    <h6>Landing Page</h6>
+    <h1>Imgur API</h1>
+    <h2>{{ image.title }}</h2>
+    <img src="{{ image.link}}" alt="{{ image.title}}">
+    <br>
+    <a href="{{image.link}}">{{ image.title }}</a>
+</div>
+{% endblock %}
